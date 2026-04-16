@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Snowy Drizzel</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Google font -->
+       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+   <body>
+
+    <header class="hero">
+  <div class="hero-text">
+    <h1>SNOWY DRIZZLE</h1>
+    <p>Serving smiles, one scoop at a time</p>
+    
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#specials">Specials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" alt="">
+  </div>
+</header>
+<section id="menu">
+  <h2>Our Menu</h2>
+
+  <!-- 🍦 Classic Flavours -->
+  <h3 class="category">🍦 Classic Flavours</h3>
+  <div class="menu-container">
+
+    <div class="menu-item">
+ 
+<img src="https://th.bing.com/th/id/OIP.Mi_bQlfkYXkWhppKduUw5wHaHa?w=184&h=184&c=7&r=0&o=7&pid=1.7&rm=3">
+
+      <h3>Vanilla Dream</h3>
+      <p>Classic creamy vanilla made with rich milk.</p>
+      <small>"Simple, sweet, and timeless."</small>
+      <span>₹80</span>
+      <button class="add-to-cart" data-name="Vanilla Dream" data-price="80">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Vanilla Dream" data-price="80">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+      
+     <img src="data:image/webp;base64,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">
+      <h3>Butterscotch Delight</h3>
+      <p>Rich butterscotch with crunchy caramel bits.</p>
+      <small>"Golden moments in a scoop."</small>
+      <span>₹110</span>
+      <button class="add-to-cart" data-name="Butterscotch Delight" data-price="110">Add to Cart</button>
+      <button class="order-btn" data-name="Butterscotch Delight" data-price="110">Order Now</button>
+
+    </div>
+
+    <div class="menu-item">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.R5rLL74Bb7ssvq4bOv2LiwHaFj?pid=ImgDet&w=194&h=144&c=7&o=7&rm=3">
+  <h3>Creamy Milk Delight</h3>
+  <p>Rich milk-based ice cream with smooth texture.</p>
+  <small>"Pure comfort in every scoop."</small>
+  <span>₹90</span>
+  <button class="add-to-cart" data-name="Creamy Milk Delight" data-price="90">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Creamy Milk Delight" data-price="90">
+  Order Now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://homecookingshow.in/wp-content/uploads/2025/03/Royal-Falooda-576x1024.webp">
+  <h3>Royal Falooda Scoop</h3>
+  <p>Falooda-inspired creamy dessert with nuts.</p>
+  <small>"A royal treat you deserve."</small>
+  <span>₹140</span>
+  <button class="add-to-cart" data-name="Royal Falooda Scoop" data-price="140">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Royal Falooda Scoop" data-price="140">
+  Order Now
+</button>
+</div>
+
+    <div class="menu-item">
+      <img src="https://thumbs.dreamstime.com/b/kulfi-also-spelled-khulfi-qulfi-popular-frozen-dairy-dessert-indian-subcontinent-often-described-as-89378809.jpg?w=768">
+      <h3>Kulfi Classic</h3>
+      <p>Traditional Indian kulfi with cardamom flavor.</p>
+      <small>"Desi taste, royal feel."</small>
+      <span>₹80</span>
+      <button class="add-to-cart" data-name="Kulfi Classic" data-price="80">
+  Add to Cart
+</button>
+ <button class="order-btn" data-name="Kulfi Classic" data-price="80">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+  <img src="https://th.bing.com/th/id/OIP.AimscwrJXSgv2rSYlCtbQAHaEK?w=270&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+  <h3>Fresh Cream Scoop</h3>
+  <p>Light and airy fresh cream ice cream.</p>
+  <small>"Soft, smooth, and simply perfect."</small>
+  <span>₹90</span>
+  <button class="add-to-cart" data-name="Fresh Cream Scoop" data-price="90">
+  Add to Cart
+</button>
+ <button class="order-btn" data-name="Fresh Cream Scoop" data-price="90">
+  Order now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://th.bing.com/th/id/OIP.BOnvNcf39NVwauFPlQXlrQHaE7?w=306&h=204&c=7&r=0&o=7&pid=1.7&rm=3">
+  <h3>Malai Magic</h3>
+  <p>Rich malai flavor with a traditional touch.</p>
+  <small>"Taste the richness of tradition."</small>
+  <span>₹100</span>
+  <button class="add-to-cart" data-name="Malai Magic" data-price="100">
+  Add to Cart
+</button>
+<button class="order-btn" data-name="Malai Magic" data-price="100">
+  Order Now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.XD4qXjJEB-cRwhDFuGmSgwHaLH?pid=ImgDet&w=191&h=286&c=7&o=7&rm=3">
+  <h3>Sweet Cream Classic</h3>
+  <p>Simple sweet cream with a velvety finish.</p>
+  <small>"Pure sweetness in every scoop."</small>
+  <span>₹85</span>
+  <button class="add-to-cart" data-name="Sweet Cream Classic" data-price="85">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Sweet Cream Classic" data-price="85">
+  Order Now
+</button>
+</div>
+
+  </div>
+
+  <!-- 🍫 Chocolate Specials -->
+  <h3 class="category">🍫 Chocolate Specials</h3>
+  <div class="menu-container">
+
+    <div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="">
+  <h3>Choco Chip Blast</h3>
+  <p>Loaded with crunchy chocolate chips.</p>
+  <small>"Crunch + chocolate = happiness."</small>
+  <span>₹130</span>
+  <button class="add-to-cart" data-name="Choco Chip Blast" data-price="130">
+  Add to Cart
+</button>
+ <button class="order-btn" data-name="Choco Chip Blast" data-price="130">
+  Order Now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/035/362/988/small_2x/ai-generated-chocolate-ice-cream-in-a-bowl-free-photo.jpg">
+  <h3>Dark Chocolate Noir</h3>
+  <p>Rich dark chocolate for intense flavor lovers.</p>
+  <small>"Not sweet, just bold."</small>
+  <span>₹150</span>
+  <button class="add-to-cart" data-name="Dark Chocolate Noir" data-price="150">
+  Add to Cart
+</button>
+ <button class="order-btn" data-name="Dark Chocolate Noir" data-price="150">
+  Order Now
+</button>
+</div>
+
+    <div class="menu-item">
+      <img src="https://th.bing.com/th/id/OIP.-euSZldw2inwM7uECeKZNQHaEK?w=328&h=184&c=7&r=0&o=7&pid=1.7&rm=3">
+      <h3>Chocolate Heaven</h3>
+      <p>Deep chocolate flavor for chocoholics.</p>
+      <small>"Because chocolate understands."</small>
+      <span>₹120</span>
+      <button class="add-to-cart" data-name="Chocolate Heaven" data-price="120">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Chocolate Heaven" data-price="120">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://th.bing.com/th?q=Chocolate+Fudge+Cake+with+Ice+Cream&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247">
+      <h3>Brownie Fudge</h3>
+      <p>Chocolate ice cream with brownie chunks.</p>
+      <small>"Every bite melts your heart."</small>
+      <span>₹150</span>
+      <button class="add-to-cart" data-name="Brownie Fudge" data-price="150">
+  Add to Cart
+</button>
+     <button class="order-btn" data-name="Brownie Fudge" data-price="150">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.thegunnysack.com/wp-content/uploads/2023/05/Oreo-Ice-Cream-1024x1536.jpg">
+      <h3>Oreo Crunch</h3>
+      <p>Crunchy Oreo mixed with creamy delight.</p>
+      <small>"Crunch that makes you smile."</small>
+      <span>₹130</span>
+      <button class="add-to-cart" data-name="Oreo Crunch" data-price="130">
+  Add to Cart
+</button>
+    <button class="order-btn" data-name="Oreo Crunch" data-price="130">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+  <img src="https://tse3.mm.bing.net/th/id/OIP.AwbxufjEmMpJ9NdImkrSGwHaE7?rs=1&pid=ImgDetMain&o=7&rm=3">
+  <h3>Chocolate Truffle Treat</h3>
+  <p>Rich truffle blended into creamy chocolate ice cream.</p>
+  <small>"Luxury in every bite."</small>
+  <span>₹160</span>
+  <button class="add-to-cart" data-name="Chocolate Truffle Treat" data-price="160">
+  Add to Cart
+</button>
+ <button class="order-btn" data-name="Chocolate Truffle Treat" data-price="160">
+  Order Now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://herrecipebox.com/wp-content/uploads/2025/06/drivexmidjourney_Healthy_Peanut_Butter_Cup_Smoothie_Amateur_pho_1da9e720-9466-479e-b804-ff79279e2816.webp">
+  <h3>Mocha Madness</h3>
+  <p>Perfect mix of coffee and chocolate flavors.</p>
+  <small>"For coffee & chocolate lovers."</small>
+  <span>₹150</span>
+  <button class="add-to-cart" data-name="Mocha Madness" data-price="150">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Mocha Madness" data-price="150">
+  Order Now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://yumsprint.com/wp-content/uploads/2025/03/2-2-e1740950435879.jpg">
+  <h3>Choco Caramel Crunch</h3>
+  <p>Chocolate ice cream with caramel and crunchy bits.</p>
+  <small>"Sweet, crunchy, irresistible."</small>
+  <span>₹155</span>
+  <button class="add-to-cart" data-name="Choco Caramel Crunch" data-price="155">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Choco Caramel Crunch" data-price="155">
+  Order Now
+</button>
+</div>
+
+  </div>
+
+  <!-- 🍓 Fruity Delights -->
+  <h3 class="category">🍓 Fruity Delights</h3>
+  <div class="menu-container">
+
+    <div class="menu-item">
+  <img src="https://ik.imagekit.io/bhug69xts/tr:h-1200,w-1200/bahama-breeze-ultimate-pineapple.png">
+  <h3>Pineapple Punch</h3>
+  <p>Sweet and tangy tropical pineapple.</p>
+  <small>"A tropical escape."</small>
+  <span>₹100</span>
+  <button class="add-to-cart" data-name="Pineapple Punch" data-price="100">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Pineapple Punch" data-price="100">
+  Order Now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://tse4.mm.bing.net/th/id/OIP.M9A7sYFYTjEob_q2Z2TLEQHaEJ?w=626&h=351&rs=1&pid=ImgDetMain&o=7&rm=3">
+  <h3>Orange Zest</h3>
+  <p>Refreshing citrus burst with creamy base.</p>
+  <small>"Zesty and refreshing."</small>
+  <span>₹95</span>
+  <button class="add-to-cart" data-name="Orange Zest" data-price="95">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Orange Zest" data-price="95">
+  Order Now
+</button>
+</div>
+
+    <div class="menu-item">
+      <img src="https://png.pngtree.com/png-clipart/20250214/original/pngtree-strawberry-swirl-dessert-in-bowl-png-image_20439460.png">
+      <h3>Strawberry Swirl</h3>
+      <p>Fresh strawberry with smooth cream.</p>
+      <small>"A little pink happiness."</small>
+      <span>₹100</span>
+      <button class="add-to-cart" data-name="Strawberry Swirl" data-price="100">
+  Add to Cart
+</button>
+      <button class="order-btn" data-name="Strawberry Swirl" data-price="100">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.pinimg.com/originals/94/f5/ee/94f5eee52201787632df83452841f564.jpg">
+      <h3>Mango Magic</h3>
+      <p>Tropical mango delight.</p>
+      <small>"Taste the sunshine."</small>
+      <span>₹110</span>
+      <button class="add-to-cart" data-name="Mango Magic" data-price="110">
+  Add to Cart
+</button>
+      <button class="order-btn" data-name="Mango Magic" data-price="110">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://recipes.net/wp-content/uploads/2023/05/berry-blast-breakfast-smoothie-recipe_43a3d35abf3c5654c26b47f6af4c7074-768x768.jpeg">
+      <h3>Berry Blast</h3>
+      <p>Mixed berries creamy delight.</p>
+      <small>"A burst of berry love."</small>
+      <span>₹130</span>
+      <button class="add-to-cart" data-name="Berry Blast" data-price="130">
+  Add to Cart
+</button>
+     <button class="order-btn" data-name="Berry Blast" data-price="130">
+  Order Now
+</button>
+    </div>
+
+    <div class="menu-item">
+  <img src="https://img.freepik.com/premium-photo/fruit-cocktails-hd-8k-wallpaper-stock-photographic-image_853645-28323.jpg">
+  <h3>Watermelon Chill</h3>
+  <p>Refreshing watermelon flavor, perfect for summer.</p>
+  <small>"Cool, juicy, and refreshing."</small>
+  <span>₹90</span>
+  <button class="add-to-cart" data-name="Watermelon Chill" data-price="90">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Watermelon Chill" data-price="90">
+  Order now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://img.freepik.com/premium-photo/glass-with-fresh-fruit-juice_1013366-705.jpg">
+  <h3>Litchi Love</h3>
+  <p>Sweet litchi flavor with a smooth creamy base.</p>
+  <small>"Delicate sweetness in every bite."</small>
+  <span>₹110</span>
+  <button class="add-to-cart" data-name="Litchi Love" data-price="110">
+  Add to Cart
+</button>
+ <button class="order-btn" data-name="Litchi Love" data-price="110">
+  Order Now
+</button>
+</div>
+
+<div class="menu-item">
+  <img src="https://th.bing.com/th/id/R.d4e11a11ef419ecc12a8df6efe9f4142?rik=Pp0HebJ%2fQWIaxQ&riu=http%3a%2f%2fjuicerhunter.com%2fwp-content%2fuploads%2f2024%2f01%2fKiwi-Juice-Recipe-With-Blender.webp&ehk=3dk%2bAbu3lLGv9fJV4LrZsuQb%2fBzH8vudgVcOzPF93v4%3d&risl=&pid=ImgRaw&r=0">
+  <h3>Kiwi Twist</h3>
+  <p>Tangy kiwi blended into a refreshing ice cream.</p>
+  <small>"A tangy twist of happiness."</small>
+  <span>₹120</span>
+  <button class="add-to-cart" data-name="Kiwi Twist" data-price="120">
+  Add to Cart
+</button>
+  <button class="order-btn" data-name="Kiwi Twist" data-price="120">
+  Order Now
+</button>
+</div>
+  </div>
+
+</section>
+
+   <section id="specials">
+  <h2>🍨 Today’s Specials</h2>
+
+  <div class="special-container">
+
+  <div class="special-card">
+  <span class="tag">Popular</span>
+
+  <h3>🔥 Buy 1 Get 1 Free</h3>
+  <p>On all Chocolate Specials – Today only!</p>
+
+  <button class="add-to-cart" data-name="Buy 1 Get 1 Free Offer" data-price="0">
+    Add to Cart
+  </button>
+
+  <button class="order-btn" data-name="Buy 1 Get 1 Free Offer" data-price="0">
+    Order Now
+  </button>
+</div>
+
+    <div class="special-card">
+      <button class="order-btn">Order Now</button>
+      <h3>🥭 Mango Magic Combo</h3>
+      <p>2 Mango Scoops + 1 Topping</p>
+      <small>"Taste the sunshine with extra sweetness."</small>
+      <span>₹150</span>
+      <button class="add-to-cart" data-name="Mango magic combo" data-price="150">
+  Add to Cart
+</button>
+    <button class="order-btn" data-name="Mango magic combo" data-price="150">
+  Order Now
+</button>
+    </div>
+
+    <div class="special-card">
+      <button class="order-btn">Order Now</button>
+      <h3>🍫 Brownie Sundae</h3>
+      <p>Chocolate ice cream + brownie + hot fudge</p>
+      <small>"Warm, cold, and pure happiness."</small>
+      <span>₹180</span>
+      <button class="add-to-cart" data-name="Brownie Sundae" data-price="180">
+  Add to Cart
+</button>
+    <button class="order-btn" data-name="Brownie Sundae" data-price="180">
+      Order Now
+</button>
+    </div>
+
+  </div>
+</section>
+
+<div id="cart">
+  <h2>Your Cart 🛒</h2>
+  <ul id="cart-items"></ul>
+  <h3>Total: ₹<span id="total">0</span></h3>
+</div>
+
+
+  
+
+<script src="script.js"></script>
+        </body>
+    
+</html>
