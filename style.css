@@ -389,3 +389,7 @@ li {
   border-radius: 8px;
   cursor: pointer;
 }
+body.dark {
+  background: #111;
+  color: white;
+}

@@ -30,9 +30,30 @@ document.addEventListener("DOMContentLoaded", () => {
         cart.push({ name, price, qty: 1 });
       }
 
+      
       updateCart();
     });
   });
+
+    // ⭐ SEARCH FUNCTION (YAHAN AAYEGA - OUTSIDE CLICK EVENT)
+  const searchInput = document.getElementById("search");
+
+if (searchInput) {
+  searchInput.addEventListener("input", function () {
+    let value = this.value.toLowerCase();
+    let items = document.querySelectorAll(".menu-item");
+
+    items.forEach(item => {
+      let name = item.querySelector("h3").innerText.toLowerCase();
+
+      if (name.includes(value)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+}
 
   // Order button
   document.querySelectorAll(".order-btn").forEach(btn => {
@@ -45,7 +66,11 @@ document.addEventListener("DOMContentLoaded", () => {
     cartItems.innerHTML = "";
     let total = 0;
 
+    let count = 0; 
+
     cart.forEach((item, index) => {
+
+      count += item.qty;
 
       const li = document.createElement("li");
 
@@ -89,10 +114,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     totalEl.textContent = total;
 
+    document.getElementById("cart-count").innerText = count;
+
     localStorage.setItem("cart", JSON.stringify(cart));
   }
 
   updateCart();
+
+  // ⭐ THEME TOGGLE
+const themeBtn = document.getElementById("themeToggle");
+
+if (themeBtn) {
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+  });
+}
+
 // Contact form
 const contactForm = document.getElementById("contact-form");
 
