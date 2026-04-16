@@ -93,4 +93,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   updateCart();
+// Contact form
+const contactForm = document.getElementById("contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+   const nameInput = document.getElementById("name");
+   const name = nameInput ? nameInput.value : "";
+
+    document.getElementById("contact-msg").innerText =
+      `Thanks ${name}, we will contact you soon! 🍦`;
+
+    this.reset();
+  });
+}
+
 });

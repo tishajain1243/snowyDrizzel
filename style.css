@@ -359,3 +359,33 @@ li {
   background: #e91e63;
   color: white;
 }
+
+#contact {
+  padding: 50px;
+  background: #fff0f6;
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#contact button {
+  padding: 10px;
+  background: hotpink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
